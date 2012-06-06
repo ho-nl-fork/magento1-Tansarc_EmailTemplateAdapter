@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <email_template_adapter translate="label" module="emailtemplateadapter">
+            <class>separator-top</class>
+            <label>Email Template Adapter</label>
+            <tab>general</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <adapter translate="label">
+                    <label>Enable Email Template Adapter</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <active translate="label">
+                            <label>Enable Email Template Adapter</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                    </fields>
+                </adapter>
+                <container translate="label">
+                    <label>Outer Container</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <dividehere translate="label">
+                            <label>Divide Outer Container on this line</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </dividehere>
+                        <html translate="label">
+                            <label>Outer Container Html</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </html>
+                    </fields>
+                </container>
+                <header translate="label">
+                    <label>Header</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>30</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <starthere translate="label">
+                            <label>Header Starts Here</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </starthere>
+                        <html translate="label">
+                            <label>Header Html</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </html>
+                    </fields>
+                </header>
+                <middle translate="label">
+                    <label>Middle</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>40</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <starthere translate="label">
+                            <label>Middle Starts Here</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </starthere>
+                        <containerdividehere translate="label">
+                            <label>Divide Middle Container on this line</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </containerdividehere>
+                        <containerhtml translate="label">
+                            <label>Middle Container Html</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </containerhtml>
+                    </fields>
+                </middle>
+                <footer translate="label">
+                    <label>Footer</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <html translate="label">
+                            <label>Footer Html</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </html>
+                    </fields>
+                </footer>
+                <additional translate="label">
+                    <label>Additional Variables</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>60</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <custom1 translate="label">
+                            <label>Custom 1</label>
+                            <comment>{{var email_template_adapter.custom1}}</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </custom1>
+                        <custom2 translate="label">
+                            <label>Custom 2</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>{{var email_template_adapter.custom2}}</comment>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </custom2>
+                        <custom3 translate="label">
+                            <label>Custom 3</label>
+                            <comment>{{var email_template_adapter.custom3}}</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </custom3>
+                        <custom4 translate="label">
+                            <label>Custom 4</label>
+                            <comment>{{var email_template_adapter.custom4}}</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </custom4>
+                        <custom5 translate="label">
+                            <label>Custom 5</label>
+                            <comment>{{var email_template_adapter.custom5}}</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </custom5>
+                        <variables translate="label comment">
+                            <label>System Variables</label>
+                            <comment>Additional configuration settings to load, separate by comma, semi-colon or new line. Write 'trans_email/ident_general/email' above and '{{var email_template_adapter.trans_email_ident_general_email}}' in the email template.</comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </variables>
+                    </fields>
+                </additional>
+
+
+                <styles translate="label">
+                    <label>Styling options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>60</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <style_selector translate="label comment">
+                            <label>Style html elements</label>
+                            <comment>Inline styles for defined elements. Allowed right now are p, h1, h2, h3, h4, h5, h6, a.</comment>
+                            <frontend_model>emailtemplateadapter/stylingoptions</frontend_model>
+                            <backend_model>emailtemplateadapter/stylingoptions</backend_model>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </style_selector>
+                        <closure translate="label comment">
+                            <label>Remove closure</label>
+                            <comment>Remove bottom of email: Thank you again, {{var store.getFrontendName()}}</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </closure>
+                    </fields>
+                </styles>
+
+                <template translate="label">
+                    <label>Allow Sending Templates</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>70</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <active translate="label">
+                            <label>Enable Filtering</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                        <allow translate="label comment">
+                            <label>Allow the following transactional emails to be sent</label>
+                            <comment>Disallowing will cause errors when trying to send. These settings are applicable on the default templates.</comment>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>emailtemplateadapter/system_config_source_emailtemplateadapter</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </allow>
+                    </fields>
+                </template>                   
+            </groups>
+        </email_template_adapter>
+    </sections>
+</config>

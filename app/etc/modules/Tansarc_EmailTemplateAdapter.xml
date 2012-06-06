@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Tansarc_EmailTemplateAdapter>
+			<active>true</active>
+			<codePool>community</codePool>
+			<version>0.2.0</version>
+		</Tansarc_EmailTemplateAdapter>
+	</modules>
+</config>

@@ -1,0 +1,7 @@
+## system files
+.DS_Store
+.idea
+Thumbs.db
+media/.thumbs/
+_backup
+!.gitkeep
