@@ -18,13 +18,15 @@
 		    <core>
                 <rewrite>
                     <email_template>Tansarc_EmailTemplateAdapter_Model_Email_Template_Adapter</email_template>
+                    <email_template_filter>Tansarc_EmailTemplateAdapter_Model_Email_Template_Filter</email_template_filter>
                 </rewrite>
             </core>
+
 		</models>
 		<helpers>
-          <emailtemplateadapter>
-            <class>Tansarc_EmailTemplateAdapter_Helper</class>
-          </emailtemplateadapter>
+            <emailtemplateadapter>
+                <class>Tansarc_EmailTemplateAdapter_Helper</class>
+            </emailtemplateadapter>
         </helpers>
 	</global>
 	<admin>
