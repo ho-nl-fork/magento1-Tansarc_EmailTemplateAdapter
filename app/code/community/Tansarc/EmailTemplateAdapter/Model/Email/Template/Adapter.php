@@ -195,11 +195,13 @@ class Tansarc_EmailTemplateAdapter_Model_Email_Template_Adapter extends Mage_Cor
 
 
         // style some elements
-        $style_selector =  Mage::getStoreConfig('email_template_adapter/styles/style_selector', $this->_storeId);
+        $style_selector = Mage::getStoreConfig('email_template_adapter/styles/style_selector', $this->_storeId);
         $style_selector = unserialize($style_selector);
-
-        foreach($style_selector as $key => $value){
-            if($key == 'a'){
+        
+        if(!is_array($style_selector)) $style_selector = array();
+        
+        foreach ($style_selector as $key => $value){
+            if ($key == 'a'){
                 $templateText = preg_replace('/<'.$key.' href="(.*?)" style="[^"]+">(.*?)<\/'.$key.'>/', '<'.$key.' style="'.$value.'" href="$1" >$2</'.$key.'>', $templateText);
             } else {
                 $templateText = preg_replace('/<'.$key.' style="[^"]+">(.*?)<\/'.$key.'>/', '<'.$key.' style="'.$value.'">$1</'.$key.'>', $templateText);
