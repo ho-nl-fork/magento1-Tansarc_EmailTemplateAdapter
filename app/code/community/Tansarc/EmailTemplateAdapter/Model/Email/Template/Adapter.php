@@ -462,19 +462,29 @@ class Tansarc_EmailTemplateAdapter_Model_Email_Template_Adapter extends Mage_Cor
      * @param $vars
      * @param $storeId
      */
-    private function _loadStoreId($vars,$storeId){
+    private function _loadStoreId($vars, $storeId = NULL){
    		//Get the appropriate store ID as it is not always passed into the sendTransactional function
-    	if(is_null($storeId)){
+        if (is_null($storeId))
+        {
     		//Can we find one of the following objects in the vars?
     		foreach($vars as $var => $object){
-    			switch($var){
-    				case 'order': 	 $storeId = $object->getStoreId(); break;
-    				case 'customer': $storeId = $object->getStoreId(); break;
-    				default:	     $storeId = null; break;
-    			}
-    			if(!is_null($storeId)){
-    				break;
-    			}
+                if (is_object($object))
+                {
+                    switch($var){
+                        case 'order':
+                            $storeId = $object->getStoreId();
+                            break;
+                        case 'customer':
+                            $storeId = $object->getStoreId();
+                            break;
+                        default:
+                            $storeId = null;
+                            break;
+                    }
+                    if (! is_null($storeId)){
+                        break;
+                    }
+                }
 	    	}
 	    	//Find it from here if still null
     	    if(is_null($storeId)){
