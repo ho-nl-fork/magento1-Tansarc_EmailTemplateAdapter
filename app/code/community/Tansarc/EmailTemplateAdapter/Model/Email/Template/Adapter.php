@@ -19,7 +19,7 @@
  * @author     Finn Snaterse <magento@tansarc.nl>
  */
 
-class Tansarc_EmailTemplateAdapter_Model_Email_Template_Adapter extends Mage_Core_Model_Email_Template
+class Tansarc_EmailTemplateAdapter_Model_Email_Template_Adapter extends Aschroder_SMTPPro_Model_Email_Template
 {
 	/**
      * @var int
