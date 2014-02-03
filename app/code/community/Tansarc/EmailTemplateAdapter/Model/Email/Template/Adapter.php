@@ -96,6 +96,10 @@ class Tansarc_EmailTemplateAdapter_Model_Email_Template_Adapter extends Mage_Cor
                 $this->setTemplateSubject($matches[1]);
                 $templateText = str_replace($matches[0], '', $templateText);
         	}
+            if (preg_match('/<!--@vars\s*((?:.)*?)\s*@-->/us', $templateText, $matches)) {
+                $this->setData('orig_template_variables', str_replace("\n", '', $matches[1]));
+                $templateText = str_replace($matches[0], '', $templateText);
+            }
         }
 
 		//Remove comment lines
