@@ -29,17 +29,6 @@
             </emailtemplateadapter>
         </helpers>
 	</global>
-	<admin>
-        <routers>
-	        <emailtemplateadapter>
-	            <use>admin</use>
-	            <args>
-	                <module>Tansarc_EmailTemplateAdapter</module>
-	                <frontName>emailtemplateadapter</frontName>
-	            </args>
-	        </emailtemplateadapter>
-        </routers>
-    </admin> 
 	<adminhtml>
 		<acl>
 	        <resources>
