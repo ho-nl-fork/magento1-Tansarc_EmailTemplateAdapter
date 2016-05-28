@@ -1,4 +1,5 @@
 # Tansarc_EmailTemplateAdapter
+Status: Deprecated
 
 This is a fork from [Tansarc_EmailTemplateAdapter](http://www.magentocommerce.com/magento-connect/email-template-adapter.html)
 that adds the following functionalities:
